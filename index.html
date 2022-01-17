@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Checkers game">
+    <title>C H E C K E R S</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ld.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body onload="zoom()">
+
+<header>
+    <div id="game-title" class="">CHECKERS<span style="font-size:14px;">by Lamia Demirok</span><br>
+    </div>
+</header>
+
+<div class="modal" id="modalWindow">
+    <div class="header">
+        <a href="#" class="close">X</a>
+    </div>
+
+    <div class="content">
+        <form>
+            <label id="first_label">1. Player</label>
+            <input id = "firstplayer" type="text" placeholder="Enter name"/>
+            <label id="second_label">2. Player</label>
+            <input id="secondplayer" type="text" placeholder="Enter name"/>
+        </form>
+    </div>
+    <div class="footer">
+        <button class="play">PLAY</button>
+    </div>
+</div>
+
+<div id="board">
+    <br>
+    <div id="messagePanel"><span>Click a square, make your move!</span></div><br>
+    <span class="player-text"><span id="p1text">Player 1</span></span>
+
+    <div id="game-board">
+        <div id="board-iner">
+            <div class="table">
+
+            </div>
+        </div>
+    </div>
+
+    <span class="player-text"><span id="p2text">Player 2</span></span>
+
+</div>
+
+<div id="menu">
+    <button id="newgame">• New Game •</button>
+    <button id="howtoplay"><a target ="_blank" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.wikihow.com%2Fimages%2Fsampledocs%2Fb%2FCheckers-Rules.docx">• How to Play •</a></button>
+</div>
+
+ <!-- added script because I wanted to open the page in 90% zoom as default -->
+<script type="text/javascript">
+    function zoom() {
+        document.body.style.zoom = "90%"
+    }
+</script>
+
+</body>
+</html>
